@@ -1,6 +1,3 @@
-import sys
-import requests
-import bs4 as soup
 import pandas as pd
 import aiohttp
 import asyncio
@@ -8,7 +5,6 @@ import argparse
 from typing import Literal
 from datetime import datetime
 from dateutil.parser import parse
-import tabulate
 
 
 def _build_yahoo_fx_url(base, target):
